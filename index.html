@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="es"> 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Proyecto Ticmas</title>
+  <title>Currículum Vitae - Ticmas</title>
   <link rel="stylesheet" href="Estilos.css">
   <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
   <link rel="stylesheet" media="(prefers-color-schemer: dark)"href="dark.css">
@@ -14,7 +14,7 @@
 <body>
   <div class="contenedor">
     
-    <div class="lado_izquierdo">
+    <header class="lado_izquierdo">
       <div class="perfil_texto">
         <div class="img1">
           <img src="foto.jpg">
@@ -22,25 +22,26 @@
         <h2>Mike White <br> <span>Programador Junior</span></h2>
       </div>
       
-      <div class="info_contacto">
-        <h3 class="titulo">Contacto</h3>
+      
+      <div class="intereses">
+        <h3 class="titulo">Intereses</h3>
         <ul>
           <li>
-            <span class="text">(206) 831-8525</span>
+            <span><i class="fa fa-book" aria-hidden="true"></i> Leer</span>
           </li>
           <li>
-            <span class="text">Mikewhite@gmail.com</span>
+            <span><i class="fa fa-gamepad" aria-hidden="true"></i> Videojuegos</span>
           </li>
           <li>
-            <span class="text">ig: @terrywhite01</span>
+            <span><i class="fa fa-heartbeat" aria-hidden="true"></i> Ejercicios</span>
           </li>
           <li>
-            <span class="text">5308 Valley View Ln</span>
+            <span><i class="fa fa-music" aria-hidden="true"></i> Musica</span>
           </li>
         </ul>
       </div>
       
-      <div class="info_contacto educacion">
+      <div class="educacion">
         <h3 class="titulo">Educación</h3>
         <ul>
           <li>
@@ -61,21 +62,21 @@
         </ul>
       </div>
       
-      <div class="info_contacto idioma">
+      <div class="idiomas">
         <h3 class="titulo">Idiomas</h3>
         <ul>
           <li> 
-             <span class="text">Ingles</span>
+             <span>Ingles</span>
           </li>
           <li> 
-             <span class="text">Portugués</span>
+             <span>Portugués</span>
           </li>
           <li>
-            <span class="text">Español</span>
+            <span>Español</span>
           </li>
         </ul>
        </div>
-    </div>
+    </header>
     
     <dark-mode-toggle
     id="dark-mode-toggle-1"
@@ -146,15 +147,16 @@
       
       
       
-      <div class="pasatiempos">
-        <h2 class="titulo2">Pasatiempos</h2>
+     <footer class="contacto">
+        <h2 class="titulo2">Contacto</h2>
         <ul>
-          <li <i class="fa fa-gamepad" aria-hidden="true"></i> Videojuegos</li>
-          <li <i class="fa fa-music" aria-hidden="true"></i> Música </li>
-          <li <i class="fa fa-book" aria-hidden="true"></i> Leer</li>
-          <li <i class="fa fa-heartbeat" aria-hidden="true"></i> Ejercicio</li>
+          <li <i class="fa fa-phone" aria-hidden="true"></i> (206) 831-8552</li>
+          <li <i class="fa fa-envelope" aria-hidden="true"></i> Mikewhite@gmail.com</li>
+          <li <i class="fa fa-facebook-official" aria-hidden="true"></i> Mike White Ln</li>
+          <li <i class="fa fa-address-card" aria-hidden="true"></i> 5308 Valley View Ln</li>
         </ul>
-    </div>
+    </footer>
   </div>
+ </div>
 </body>
 </html>

@@ -31,6 +31,8 @@ grid-template-columns: 1fr 2fr;
   background: brown;
   padding: 40px;
 }
+
+
 .perfil_texto {
   position: relative;
   display: flex;
@@ -65,35 +67,72 @@ grid-template-columns: 1fr 2fr;
 .perfil_texto h2 span {
   font-size:  20px;
 }
-.info_contacto {
+
+
+
+.intereses {
   padding-top: 40px;
 }
-.titulo {
+.intereses .titulo {
   color: white;
   text-transform: uppercase;
   font-weight: 600;
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
-.info_contacto ul {
+.intereses ul {
   position: relative;
 }
-.info_contacto ul li {
+.intereses ul li {
   position: relative;
   margin: 10px 0;
+  list-style: none;
 }
-.info_contacto ul li span {
-  color: white;
-}
-.info_contacto.educacion li {
-  margin-bottom: 15px;
-}
-.info_contacto.educacion h5 {
-  color: white;
-}
-.info_contacto.educacion h4 {
+.intereses ul li span {
   color: white;
   font-weight: 300;
+}
+
+
+.educacion {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-top: 40px;
+}
+.educacion .titulo{
+  margin-bottom: 20px;
+}
+.educacion ul li {
+  margin-bottom: 10px;
+  list-style: inherit;
+}
+.educacion h5 {
+  color: white;
+}
+.educacion h4 {
+  color: white;
+  font-weight: 300;
+}
+
+
+.idiomas{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding-top: 40px;
+}
+.idiomas .titulo {
+  margin-bottom: 20px;
+}
+.idiomas span{
+  font-weight: 300;
+}
+.idiomas ul li {
+  list-style: inherit;
+  margin-bottom: 10px;
 }
 
 
@@ -127,6 +166,8 @@ grid-template-columns: 1fr 2fr;
   text-transform: uppercase;
   color: brown;
   
+  
+  
 }
 .habilidades .caja {
   position: relative;
@@ -157,14 +198,16 @@ grid-template-columns: 1fr 2fr;
   background: #03a9f4;
   }
 
-.pasatiempos {
+
+
+.contacto {
   margin-top: 40px;
 }
-.pasatiempos ul{
+.contacto ul{
   display: grid;
   grid-template-columns: repeat(4,1fr);
 }
-.pasatiempos ul li {
+.contacto ul li {
   list-style: none;
   color: brown;
   font-weight: 500;
@@ -173,12 +216,13 @@ grid-template-columns: 1fr 2fr;
 
 
 
+
 @media (max-width: 1000px) {
   .contenedor {
     margin: 10px;
     grid-template-columns: repeat(1,1fr)
   }
-  .pasatiempos ul {
+  .contacto ul {
     grid-template-columns: repeat(2,1fr)
   }
 }
@@ -187,7 +231,7 @@ grid-template-columns: 1fr 2fr;
   .acerca_de_mi .caja {
      flex-direction: column;   
   }
-  .acerca_de_mi .caja .anio_exp {
+  .acerca_de_mi .caja .año_exp {
     margin-bottom: 5px;
   }
 }
