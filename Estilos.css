@@ -1,0 +1,193 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+:root {
+  color-scheme:light dark;
+}
+
+body {
+  background: #2d2d2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.contenedor {
+position: relative;
+width: 100%;
+max-width: 1000px;
+min-height: 1000px;
+background-color: var(--background-color);
+margin: 50px;
+display: grid;
+grid-template-columns: 1fr 2fr;
+}
+.contenedor .lado_izquierdo {
+  position: relative;
+  background: brown;
+  padding: 40px;
+}
+.perfil_texto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+}
+.perfil_texto .img1 {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.perfil_texto .img1 img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.perfil_texto h2 {
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 40px;
+}
+.perfil_texto h2 span {
+  font-size:  20px;
+}
+.info_contacto {
+  padding-top: 40px;
+}
+.titulo {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.info_contacto ul {
+  position: relative;
+}
+.info_contacto ul li {
+  position: relative;
+  margin: 10px 0;
+}
+.info_contacto ul li span {
+  color: white;
+}
+.info_contacto.educacion li {
+  margin-bottom: 15px;
+}
+.info_contacto.educacion h5 {
+  color: white;
+}
+.info_contacto.educacion h4 {
+  color: white;
+  font-weight: 300;
+}
+
+
+
+.contenedor .lado_derecho {
+  position: relative;
+  padding: 40px;
+}
+.acerca_de_mi {
+  margin-bottom: 50px;
+}
+.titulo2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  color: brown;
+}
+.acerca_de_mi .caja {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.acerca_de_mi .caja .año_exp {
+  min-width: 150px;
+}
+.acerca_de_mi .caja .año_exp h5 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.acerca_de_mi .caja .text  h4 {
+  text-transform: uppercase;
+  color: brown;
+  
+}
+.habilidades .caja {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.habilidades .caja h4 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+.habilidades .porcentaje {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #081921;
+    display: block;
+    margin-top: 5px;
+}
+.habilidades .porcentaje div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+  }
+
+.pasatiempos {
+  margin-top: 40px;
+}
+.pasatiempos ul{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.pasatiempos ul li {
+  list-style: none;
+  color: brown;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+
+
+@media (max-width: 1000px) {
+  .contenedor {
+    margin: 10px;
+    grid-template-columns: repeat(1,1fr)
+  }
+  .pasatiempos ul {
+    grid-template-columns: repeat(2,1fr)
+  }
+}
+
+@media (max-width: 600px) {
+  .acerca_de_mi .caja {
+     flex-direction: column;   
+  }
+  .acerca_de_mi .caja .anio_exp {
+    margin-bottom: 5px;
+  }
+}
